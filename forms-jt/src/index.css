@@ -1,0 +1,112 @@
+
+body {
+    background: rgb(190, 186, 186);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  .form {
+    background: rgb(170, 18, 18);
+    border-radius: 7px;
+    color: #000;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 2%;
+    width: 40%;
+  }
+  
+  input {
+    width: 100%;
+    outline: none;
+  }
+  
+  button {
+    background: rgb(0, 0, 0);
+    border: none;
+    color: #fefefe;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  button:hover {
+    background: whitesmoke;
+  }
+  
+  .users-list {
+    background: #fff;
+    border-radius: 7px;
+    color: #000;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 2%;
+    width: 40%;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+   
+  /* ol.circle {
+    list-style: none;
+    counter-reset: item;
+    margin-left: 466px;
+  }
+ 
+  ol.circle > li{
+    counter-increment: item;
+    margin-bottom: 5px;
+  }
+ 
+ ol.circle > li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #FF8A65;
+    border-radius: 100%;
+    color: white;
+    width: 1.3em;
+    text-align: center;
+    display: inline-block;
+  } */
+
+  ol.border {
+    list-style-type: none;
+    list-style-type: decimal !ie;     
+    margin: 0;
+    margin-left: 466px;
+    padding: 0;     
+    counter-reset: li-counter;
+}
+
+ol.border > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 0.5em;
+    min-height: 3em;
+    border-left: 2px solid #CCCCCC;
+}
+
+ol.border > li:before {
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: 0.8em;     
+    font-size: 3em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    color: #ad5858; 
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
